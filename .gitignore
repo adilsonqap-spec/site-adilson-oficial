@@ -1,0 +1,16 @@
+# Ignorar arquivos ZIP pesados
+*.zip
+site-corrigido.zip
+site-final-ajustado.zip
+site-final-v2.zip
+site-para-hostinger.zip
+
+# Ignorar pastas de sistema e dependências
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Ignorar scripts de manutenção temporários
+fix.js
+optimize.js
+site-para-hostinger.zip
