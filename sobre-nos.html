@@ -56,12 +56,12 @@
     <!-- Fail-safe Styles for Navigation -->
     <style>
     .glass-pill {
-        background: rgba(255, 255, 255, 0.85) !important;
-        backdrop-filter: blur(20px) !important;
-        -webkit-backdrop-filter: blur(20px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.6) !important;
+        background: rgba(255, 255, 255, 0.72) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.4) !important;
         border-radius: 9999px !important;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06) !important;
     }
     </style>
 </head>
@@ -71,9 +71,9 @@
 
         <!-- Container pill desktop -->
         <div class="w-full max-w-[1100px]">
-            <nav class="glass-pill hidden md:flex items-center pl-3 pr-6 py-0 h-20 justify-between">
+            <nav class="glass-pill hidden md:flex items-center pl-3 pr-6 py-0 h-16 justify-between">
                 <a href="/" class="flex items-center group">
-                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-14 w-auto transition-transform duration-300 group-hover:scale-105">
                 </a>
 
                 <div class="flex items-center gap-6 md:gap-8 ">
@@ -103,9 +103,9 @@
             </nav>
 
             <!-- Mobile topbar -->
-            <div class="glass-pill md:hidden relative flex justify-between items-center pl-2 pr-6 py-0 mx-auto w-full gap-4 h-16">
+            <div class="glass-pill md:hidden relative flex justify-between items-center pl-2 pr-6 py-0 mx-auto w-full gap-4 h-14">
                 <a href="/" class="flex items-center group">
-                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-14 w-auto transition-transform duration-300 group-hover:scale-105">
                 </a>
                 <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center justify-center p-1.5 rounded-full text-darker hover:bg-lightAlt focus:outline-none">
                     <span class="sr-only">Abrir menu</span>
@@ -140,7 +140,7 @@
 
     <main>
         <!-- Hero da Página -->
-        <section class="pt-64 pb-20 bg-darker text-white relative overflow-hidden">
+        <section class="pt-72 pb-20 bg-darker text-white relative overflow-hidden">
             <!-- Background Animado -->
             <div class="absolute inset-0 z-0 overflow-hidden">
                 <div class="hero-slide active absolute inset-0" style="background-image: url('/img/nova-foto-hero.jpg');"></div>
@@ -250,7 +250,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="space-y-6">
                     <a href="/" class="flex items-center group inline-flex">
-                        <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                        <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-14 w-auto transition-transform duration-300 group-hover:scale-105">
                     </a>
                     <p class="text-darker/60 text-sm leading-relaxed max-w-sm">
                         Adilson Sousa. Criação de sites, SEO Local e presença digital com viés tecnológico e orientação premium à conversão.
