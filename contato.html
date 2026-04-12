@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contato | Adilson Sousa M�dia Digital | Santa Maria RS</title>
-    <meta name="description" content="Entre em contato com o Adilson Sousa. Solicite seu or�amento para cria��o de sites, landing pages e Google Meu Neg�cio. Atendimento r�pido via WhatsApp e Instagram.">
+    <title>Contato | Adilson Sousa Mídia Digital | Santa Maria RS</title>
+    <meta name="description" content="Entre em contato com o Adilson Sousa. Solicite seu orçamento para criação de sites, landing pages e Google Meu Negócio. Atendimento rápido via WhatsApp e Instagram.">
     <link rel="canonical" href="https://adilsont.com.br/contato">
-    <meta property="og:title" content="Contato | Adilson Sousa M�dia Digital | Santa Maria RS">
-    <meta property="og:description" content="Solicite seu or�amento para cria��o de sites e presen�a digital. Atendimento r�pido via WhatsApp.">
+    <meta property="og:title" content="Contato | Adilson Sousa Mídia Digital | Santa Maria RS">
+    <meta property="og:description" content="Solicite seu orçamento para criação de sites e presença digital. Atendimento rápido via WhatsApp.">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     
@@ -33,12 +33,12 @@
     
     @media (max-width: 768px) {
         .mobile-bg-cta {
-            background-image: url('/img/cta-chamada-acao-mobile.webp') !important;
+            background-image: url('/img/cta-chamada-action-mobile.webp') !important;
         }
     }
 </style>
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -84,21 +84,21 @@
 
                 <div class="flex items-center gap-6 md:gap-8 ">
                     <div class="flex items-center gap-7 text-sm font-semibold text-darker/60 relative">
-                        <a class="hover:text-secondary transition-colors duration-300" href="/">In�cio</a>
-                        <a class="hover:text-secondary transition-colors duration-300" href="/sobre-nos.html">Sobre N�s</a>
+                        <a class="hover:text-secondary transition-colors duration-300" href="/">Início</a>
+                        <a class="hover:text-secondary transition-colors duration-300" href="/sobre-nos.html">Sobre Nós</a>
                         
                         <div x-data="{ open: false }" class="relative" @click.away="open = false">
                             <button @click="open = !open" class="hover:text-secondary transition-colors duration-300 flex items-center gap-1">
-                                Servi�os <svg class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                Serviços <svg class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                             </button>
                             <div x-show="open" x-transition.opacity class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[220px] bg-white rounded-2xl shadow-xl border border-white/60 py-2" style="display: none;">
-                                <a href="/criacao-de-sites.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Cria��o de Sites</a>
+                                <a href="/criacao-de-sites.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Criação de Sites</a>
                                 <a href="/landing-page.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Landing Pages</a>
-                                <a href="/google-meu-negocio.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Google Meu Neg�cio</a>
+                                <a href="/google-meu-negocio.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Google Meu Negócio</a>
                             </div>
                         </div>
 
-                        <a class="text-white font-bold" href="/contato.html">Contato</a>
+                        <a class="text-secondary font-bold" href="/contato.html">Contato</a>
                         <a class="hover:text-secondary transition-colors duration-300" href="/faq.html">FAQ</a>
                     </div>
 
@@ -123,17 +123,17 @@
             <!-- Mobile dropdown -->
             <div x-show="mobileMenuOpen" x-collapse style="display:none;" class="md:hidden mt-2 bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/60 overflow-hidden">
                 <div class="px-4 py-4 space-y-1">
-                    <a href="/" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">In�cio</a>
-                    <a href="/sobre-nos.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Sobre N�s</a>
+                    <a href="/" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Início</a>
+                    <a href="/sobre-nos.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Sobre Nós</a>
                     
                     <div x-data="{ openServicos: false }">
                         <button @click="openServicos = !openServicos" class="flex justify-between items-center w-full px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium focus:outline-none">
-                            Servi�os <span class="material-symbols-outlined text-lg" :class="openServicos ? 'rotate-180' : ''" style="transition: transform 0.2s;">expand_more</span>
+                            Serviços <span class="material-symbols-outlined text-lg" :class="openServicos ? 'rotate-180' : ''" style="transition: transform 0.2s;">expand_more</span>
                         </button>
                         <div x-show="openServicos" x-collapse class="pl-4 pr-2 space-y-1 mb-1" style="display: none;">
-                            <a href="/criacao-de-sites.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Cria��o de Sites</a>
+                            <a href="/criacao-de-sites.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Criação de Sites</a>
                             <a href="/landing-page.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Landing Pages</a>
-                            <a href="/google-meu-negocio.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Google Meu Neg�cio</a>
+                            <a href="/google-meu-negocio.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Google Meu Negócio</a>
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@
     </header>
 
     <main>
-        <!-- Hero da P�gina -->
+        <!-- Hero da Página -->
         <section class="pt-64 pb-20 bg-darker text-white relative overflow-hidden">
             <!-- Background Animado -->
             <div class="absolute inset-0 z-0 overflow-hidden">
@@ -156,10 +156,10 @@
             
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-20">
                 <h1 class="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight leading-[1.1] mb-6 max-w-4xl">
-                    Vamos tirar a sua ideia do papel e colocar <span class="text-white">o seu neg�cio no Google</span>
+                    Vamos tirar a sua ideia do papel e colocar <span class="text-white">o seu negócio no Google</span>
                 </h1>
                 <p class="text-xl text-white font-semibold leading-relaxed max-w-3xl">
-                    Atendimento r�pido e personalizado via WhatsApp ou Instagram. Solicite seu or�amento ou tire suas d�vidas agora mesmo.
+                    Atendimento rápido e personalizado via WhatsApp ou Instagram. Solicite seu orçamento ou tire suas dúvidas agora mesmo.
                 </p>
             </div>
         </section>
@@ -175,7 +175,7 @@
                             <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24"><path d="M12.016 2.015c-5.512 0-9.984 4.471-9.984 9.984 0 2.008.57 3.864 1.554 5.422L2 22.016l4.733-1.423a9.923 9.923 0 005.283 1.517c5.512 0 9.984-4.472 9.984-9.984 0-5.513-4.472-9.984-9.984-9.984zM16.924 15.65c-.218.614-1.258 1.171-1.748 1.252-.45.074-1.042.143-3.238-.768-2.646-1.096-4.321-3.792-4.453-3.966-.13-.173-1.066-1.423-1.066-2.716 0-1.293.682-1.928.924-2.186.242-.258.528-.323.702-.323.174 0 .348.01.503.017.163.007.382-.061.597.458.216.52.738 1.802.803 1.932.065.13.108.281.021.455-.087.173-.13.281-.26.433-.13.152-.274.331-.39.462-.13.14-.268.293-.115.558.152.264.678 1.121 1.452 1.81.996.887 1.838 1.161 2.11 1.292.274.13.434.108.598-.065.163-.173.715-.824.91-1.106.195-.281.39-.236.63-.146.238.093 1.506.711 1.766.842.26.13.433.195.498.303.065.108.065.63-.153 1.244z"/></svg>
                         </div>
                         <h2 class="text-2xl font-bold text-darker">WhatsApp</h2>
-                        <p class="text-darker/70">Resposta em minutos para or�amentos e d�vidas r�pidas. Sem intermedi�rios, fale diretamente com o Adilson.</p>
+                        <p class="text-darker/70">Resposta em minutos para orçamentos e dúvidas rápidas. Sem intermediários, fale diretamente com o Adilson.</p>
                         <a href="https://wa.me/5555996695492" target="_blank" class="w-full bg-[#25D366] text-white py-5 rounded-[16px] font-bold text-lg hover:bg-green-600 transition-all flex items-center justify-center gap-3">
                             <span class="material-symbols-outlined">chat</span> Falar Agora no WhatsApp
                         </a>
@@ -196,20 +196,20 @@
             </div>
         </section>
 
-        <!-- Informa��es Adicionais -->
+        <!-- Informações Adicionais -->
         <section class="py-20 bg-lightAlt/40 border-y border-borderBlue/30 text-center">
             <div class="max-w-[1000px] mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="font-bold text-darker mb-2 lowercase tracking-tight">localiza��o</h3>
+                    <h3 class="font-bold text-darker mb-2 lowercase tracking-tight">localização</h3>
                     <p class="text-darker/60 text-sm">Santa Maria - RS e Atendimento Online</p>
                 </div>
                 <div>
-                    <h3 class="font-bold text-darker mb-2 lowercase tracking-tight">hor�rio</h3>
+                    <h3 class="font-bold text-darker mb-2 lowercase tracking-tight">horário</h3>
                     <p class="text-darker/60 text-sm">Segunda a Sexta - Atendimento Online</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-darker mb-2 lowercase tracking-tight">suporte</h3>
-                    <p class="text-darker/60 text-sm">Suporte cont�nuo via WhatsApp p�s-entrega</p>
+                    <p class="text-darker/60 text-sm">Suporte contínuo via WhatsApp pós-entrega</p>
                 </div>
             </div>
         </section>
@@ -227,11 +227,11 @@
                         Sua empresa no Google. <span class="text-white">Seus clientes no WhatsApp.</span>
                     </h2>
                     <p class="text-xl text-white font-bold leading-relaxed" style="font-family: sans-serif;">
-                        Site profissional, SEO local e estrat?gia digital para empresas em Santa Maria. Entrega em 30 dias. Atendimento direto no WhatsApp sem burocracia.
+                        Site profissional, SEO local e estratégia digital para empresas em Santa Maria. Entrega em 30 dias. Atendimento direto no WhatsApp sem burocracia.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                         <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary text-white px-10 py-5 rounded-[16px] font-bold text-base md:text-lg hover:bg-primary transition-all shadow-[0_10px_30px_rgba(37,99,235,0.3)] flex items-center justify-center gap-3">
-                            Falar com o Adilson Agora ?
+                            Falar com o Adilson Agora →
                         </a>
                     </div>
                 </div>
@@ -247,26 +247,26 @@
                         <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
                     </a>
                     <p class="text-darker/60 text-sm leading-relaxed max-w-sm">
-                        Adilson Sousa. Cria��o de sites, SEO Local e presen�a digital com vi�s tecnol�gico e orienta��o premium � convers�o.
+                        Adilson Sousa. Criação de sites, SEO Local e presença digital com viés tecnológico e orientação premium à conversão.
                     </p>
                 </div>
                 
                 <div>
-                    <div class="font-bold text-darker mb-4">Navega��o</div>
+                    <div class="font-bold text-darker mb-4">Navegação</div>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="/" class="text-darker/60 hover:text-secondary transition-colors">In�cio</a></li>
-                        <li><a href="/sobre-nos.html" class="text-darker/60 hover:text-secondary transition-colors">Sobre N�s</a></li>
+                        <li><a href="/" class="text-darker/60 hover:text-secondary transition-colors">Início</a></li>
+                        <li><a href="/sobre-nos.html" class="text-darker/60 hover:text-secondary transition-colors">Sobre Nós</a></li>
                         <li><a href="/contato.html" class="text-darker/60 hover:text-secondary transition-colors">Contato</a></li>
-                        <li><a href="/faq.html" class="text-darker/60 hover:text-secondary transition-colors">D�vidas Frequentes</a></li>
+                        <li><a href="/faq.html" class="text-darker/60 hover:text-secondary transition-colors">Dúvidas Frequentes</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <div class="font-bold text-darker mb-4">Informa��es</div>
+                    <div class="font-bold text-darker mb-4">Informações</div>
                     <ul class="space-y-4 text-sm text-darker/60">
                         <li class="flex items-start gap-3">
                                                         <svg class="w-5 h-5 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                            Santa Maria - RS e regi�o (Atendimento Online)
+                            Santa Maria - RS e região (Atendimento Online)
                         </li>
                         <li class="flex items-center gap-3">
                                                         <svg class="w-5 h-5 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
@@ -290,7 +290,7 @@
             </div>
             
             <div class="pt-8 border-t border-borderBlue/50 flex flex-col md:flex-row justify-between items-center gap-4 text-darker/50 text-xs">
-                <span>� 2025 Adilson Sousa. Todos os direitos reservados.</span>
+                <span>© 2025 Adilson Sousa. Todos os direitos reservados.</span>
                 <span>Desenvolvido por Adilson Sousa</span>
             </div>
         </div>
