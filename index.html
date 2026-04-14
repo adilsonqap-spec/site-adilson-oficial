@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
@@ -44,36 +44,35 @@
     [
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://adilsont.com.br/#organization",
-        "name": "Adilson Sousa Mídia Digital",
+        "@type": "Person",
+        "@id": "https://adilsont.com.br/#person",
+        "name": "Adilson Sousa",
+        "jobTitle": "Especialista em Criação de Sites e SEO Local",
         "url": "https://adilsont.com.br/",
-        "logo": "https://adilsont.com.br/assets/img/logo.png",
-        "sameAs": [
-          "https://instagram.com/adilsontsousa"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://adilsont.com.br/#website",
-        "url": "https://adilsont.com.br/",
-        "name": "Adilson Sousa Mídia Digital"
+        "image": "https://adilsont.com.br/img/adilson-sousa-especialista-criacao-de-sites-santa-maria-rs.webp",
+        "sameAs": ["https://instagram.com/adilsontsousa"],
+        "description": "Especialista em criação de sites profissionais, landing pages de alta conversão e SEO local em Santa Maria, RS."
       },
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "@id": "https://adilsont.com.br/#localbusiness",
-        "name": "Adilson Sousa Mídia Digital",
-        "image": "https://adilsont.com.br/assets/img/hero-bg.webp",
+        "name": "Adilson Sousa | Criação de Sites e SEO Local",
+        "image": "https://adilsont.com.br/img/adilson-sousa-especialista-criacao-de-sites-santa-maria-rs.webp",
         "url": "https://adilsont.com.br/",
         "telephone": "+5555996695492",
+        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Atendimento online",
+          "streetAddress": "Atendimento Online",
           "addressLocality": "Santa Maria",
           "addressRegion": "RS",
           "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -29.6842,
+          "longitude": -53.8069
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -81,16 +80,29 @@
           "opens": "09:00",
           "closes": "18:00"
         },
-        "priceRange": "$$",
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "addressLocality": "Santa Maria",
-            "addressRegion": "RS",
-            "addressCountry": "BR"
-          }
+        "areaServed": [
+            { "@type": "City", "name": "Santa Maria" },
+            { "@type": "State", "name": "Rio Grande do Sul" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://adilsont.com.br/#website",
+        "url": "https://adilsont.com.br/",
+        "name": "Adilson Sousa",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://adilsont.com.br/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://adilsont.com.br/#localbusiness-legacy",
+        "name": "Adilson Sousa",
+        "url": "https://adilsont.com.br/"
       },
       {
         "@context": "https://schema.org",
@@ -154,7 +166,7 @@
         "name": "Criação de Sites Profissionais",
         "description": "Sites completos com visual estratégico, carregamento rápido, estrutura profissional e foco em conversão.",
         "provider": {
-          "@id": "https://adilsont.com.br/#organization"
+          "@id": "https://adilsont.com.br/#person"
         },
         "areaServed": "Santa Maria RS e cidades próximas"
       },
@@ -165,7 +177,7 @@
         "name": "Landing Pages",
         "description": "Páginas criadas para campanhas, captação de leads e aumento de contatos no WhatsApp.",
         "provider": {
-          "@id": "https://adilsont.com.br/#organization"
+          "@id": "https://adilsont.com.br/#person"
         },
         "areaServed": "Santa Maria RS e cidades próximas"
       },
@@ -176,7 +188,7 @@
         "name": "Google Meu Negócio",
         "description": "Gestão e otimização do perfil para aumentar presença no Google e gerar mais contatos locais.",
         "provider": {
-          "@id": "https://adilsont.com.br/#organization"
+          "@id": "https://adilsont.com.br/#person"
         },
         "areaServed": "Santa Maria RS e cidades próximas"
       },
@@ -187,7 +199,7 @@
         "name": "SEO Local",
         "description": "Estratégias para melhorar o posicionamento no Google e atrair clientes com intenção real de compra.",
         "provider": {
-          "@id": "https://adilsont.com.br/#organization"
+          "@id": "https://adilsont.com.br/#person"
         },
         "areaServed": "Santa Maria RS e cidades próximas"
       },
@@ -198,7 +210,7 @@
         "name": "Gestão de Redes Sociais",
         "description": "Conteúdo estratégico para fortalecer marca, gerar autoridade e manter presença digital ativa.",
         "provider": {
-          "@id": "https://adilsont.com.br/#organization"
+          "@id": "https://adilsont.com.br/#person"
         },
         "areaServed": "Santa Maria RS e cidades próximas"
       },
