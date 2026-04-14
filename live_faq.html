@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FAQ | Perguntas Frequentes | Adilson Sousa M�dia Digital</title>
+    <meta name="description" content="Tire suas d�vidas sobre cria��o de sites, SEO Local, Google Meu Neg�cio e presen�a digital em Santa Maria e regi�o. Respostas diretas e sem burocracia.">
+    <link rel="canonical" href="https://adilsont.com.br/faq">
+    <meta property="og:title" content="FAQ | Perguntas Frequentes | Adilson Sousa M�dia Digital">
+    <meta property="og:description" content="Tire suas d�vidas sobre cria��o de sites, SEO Local e Google Meu Neg�cio em Santa Maria e regi�o.">
+    <meta property="og:url" content="https://adilsont.com.br/faq">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/></noscript>
+    <link rel="preload" href="https://fonts.cdnfonts.com/css/balkeno" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.cdnfonts.com/css/balkeno" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/></noscript>
+    <link rel="preload" as="image" href="/img/foto-faq.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Mobile image optimization: swap to smaller WebP -->
+    <style>
+    @media (max-width: 768px) {
+        .mobile-bg-foto-faq {
+            background-image: url('/img/foto-faq-mobile.webp') !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .mobile-bg-cta {
+            background-image: url('/img/cta-chamada-acao-mobile.webp') !important;
+        }
+    }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#12A9FF',
+            secondary: '#2563EB',
+            destaque: '#38BDF8',
+            dark: '#07111F',
+            darker: '#111827',
+            light: '#F9FAFB',
+            lightAlt: '#EEF6FF',
+            borderBlue: '#D6E6FF'
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+</script>
+    <!-- Fail-safe Styles for Navigation -->
+    <style>
+    .glass-pill {
+        background: rgba(255, 255, 255, 0.85) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.6) !important;
+        border-radius: 9999px !important;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) !important;
+    }
+    </style>
+</head>
+<body class="bg-light text-darker antialiased">
+
+    <header x-data="{ mobileMenuOpen: false }" @resize.window="if(window.innerWidth >= 768) mobileMenuOpen = false" class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-10 px-4 lg:px-8">
+
+        <!-- Container pill desktop -->
+        <div class="w-full max-w-[1100px]">
+            <nav class="glass-pill hidden md:flex items-center pl-3 pr-6 py-0 h-20 justify-between">
+                <a href="/" class="flex items-center group">
+                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                </a>
+
+                <div class="flex items-center gap-6 md:gap-8 ">
+                    <div class="flex items-center gap-7 text-sm font-semibold text-darker/60 relative">
+                        <a class="hover:text-secondary transition-colors duration-300" href="/">In�cio</a>
+                        <a class="hover:text-secondary transition-colors duration-300" href="/sobre-nos.html">Sobre N�s</a>
+                        
+                        <div x-data="{ open: false }" class="relative" @click.away="open = false">
+                            <button @click="open = !open" class="hover:text-secondary transition-colors duration-300 flex items-center gap-1">
+                                Servi�os <svg class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                            <div x-show="open" x-transition.opacity class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[220px] bg-white rounded-2xl shadow-xl border border-white/60 py-2" style="display: none;">
+                                <a href="/criacao-de-sites.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Cria��o de Sites</a>
+                                <a href="/landing-page.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Landing Pages</a>
+                                <a href="/google-meu-negocio.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Google Meu Neg�cio</a>
+                            </div>
+                        </div>
+
+                        <a class="hover:text-secondary transition-colors duration-300" href="/contato.html">Contato</a>
+                        <a class="text-secondary font-bold" href="/faq.html">FAQ</a>
+                    </div>
+
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary transition-all shadow-sm">
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Mobile topbar -->
+            <div class="glass-pill md:hidden relative flex justify-between items-center pl-2 pr-6 py-0 mx-auto w-full gap-4 h-16">
+                <a href="/" class="flex items-center group">
+                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                </a>
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center justify-center p-1.5 rounded-full text-darker hover:bg-lightAlt focus:outline-none">
+                    <span class="sr-only">Abrir menu</span>
+                    <svg class="w-6 h-6" x-show="!mobileMenuOpen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                    <svg class="w-6 h-6" x-show="mobileMenuOpen" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+
+            <!-- Mobile dropdown -->
+            <div x-show="mobileMenuOpen" x-collapse style="display:none;" class="md:hidden mt-2 bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/60 overflow-hidden">
+                <div class="px-4 py-4 space-y-1">
+                    <a href="/" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">In�cio</a>
+                    <a href="/sobre-nos.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Sobre N�s</a>
+                    
+                    <div x-data="{ openServicos: false }">
+                        <button @click="openServicos = !openServicos" class="flex justify-between items-center w-full px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium focus:outline-none">
+                            Servi�os <span class="material-symbols-outlined text-lg" :class="openServicos ? 'rotate-180' : ''" style="transition: transform 0.2s;">expand_more</span>
+                        </button>
+                        <div x-show="openServicos" x-collapse class="pl-4 pr-2 space-y-1 mb-1" style="display: none;">
+                            <a href="/criacao-de-sites.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Cria��o de Sites</a>
+                            <a href="/landing-page.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Landing Pages</a>
+                            <a href="/google-meu-negocio.html" class="block px-4 py-2.5 rounded-xl text-sm text-darker/80 hover:bg-lightAlt font-medium">Google Meu Neg�cio</a>
+                        </div>
+                    </div>
+
+                    <a href="/contato.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Contato</a>
+                    <a href="/faq.html" class="block px-4 py-3 rounded-xl text-sm text-secondary font-bold bg-lightAlt">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da P�gina -->
+        <section class="pt-64 pb-20 bg-darker text-white relative overflow-hidden">
+            <!-- Background Animado -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <div class="hero-slide active absolute inset-0 mobile-bg-foto-faq" style="background-image: url('/img/foto-faq.jpg');"></div>
+            </div>
+            <!-- Overlay escuro (25%) para 75% de visibilidade -->
+            <div class="absolute inset-0 bg-darker z-10" style="opacity: 0.25;"></div>
+            
+            <div class="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-20">
+                <h1 class="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight leading-[1.1] mb-6 max-w-4xl">
+                    Tire suas d�vidas sobre o <span class="text-white">trabalho e a presen�a digital</span> da sua empresa
+                </h1>
+                <p class="text-xl text-white font-semibold leading-relaxed max-w-3xl">
+                    D�vidas comuns de quem est� buscando melhorar o posicionamento no Google e a convers�o do site em Santa Maria e regi�o.
+                </p>
+            </div>
+        </section>
+
+        <!-- Se��o de FAQ -->
+        <section class="py-24 bg-white">
+            <div class="max-w-[800px] mx-auto px-6 lg:px-8">
+                <div x-data="{ selected: 1 }" class="space-y-6">
+                    <!-- item 1 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">Voc�s atendem somente Santa Maria?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 1 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 1" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                O atendimento � inteiramente online, focado em Santa Maria e tamb�m em cidades pr�ximas, mas possu�mos a flexibilidade de adaptar projetos para clientes de qualquer localidade atrav�s da mesma estrutura metodol�gica.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">O site j� � feito com foco em celular?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 2 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 2" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                Sim. O projeto � categoricamente pensado com prioridade total para a experi�ncia mobile (Mobile First), visando carregar rapidamente na rede m�vel e mostrar bot�es sempre f�ceis de tocar.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">O site ajuda mesmo a aparecer no Google?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 3 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 3" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                Sim, completamente. A estrutura � desenvolvida utilizando as melhores pr�ticas contempor�neas de SEO On-page e Otimiza��o para buscas locais, dizendo aos motores exatamente sobre os seus servi�os prestados.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">Como funciona a gest�o do Google Meu Neg�cio?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 4 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 4" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                Neste escopo, estruturamos a cria��o e preenchimento otimizado do seu perfil, escolhendo categorias exatas, adicionando fotos na melhor qualidade e implementando gest�o estrat�gica frequente do cart�o e palavras-chave.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">� poss�vel criar apenas uma Landing Page?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 5 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 5" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                Sim. Dependendo da sua necessidade, se � campanha de ads ou captura de um servi�o espec�fico, uma Landing Page dedicada, enxuta e focada em uma promessa far� milagres pela sua taxa de convers�o local.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 6 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 6 ? selected = 6 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">Como � feito o pagamento?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 6 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 6" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                Definimos os servi�os necess�rios durante a conversa. Depois estabelecemos os marcos para transa��o via PIX ou transa��o banc�ria formal, com transpar�ncia total em cada etapa.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 7 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 7 ? selected = 7 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">Preciso pagar mensalidade depois do site pronto?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 7 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 7" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                O �nico custo fixo do site � o da sua Hospedagem e do Dom�nio (repassados ao provedor escolhido). Para os servi�os cont�nuos de Redes Sociais e Google oferecemos acompanhamento mensal com base em contrato fixo e alinhado.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 8 -->
+                    <div class="bg-white rounded-[20px] border border-borderBlue/50 shadow-sm overflow-hidden transition-all hover:shadow-md">
+                        <button @click="selected !== 8 ? selected = 8 : selected = null" class="w-full text-left px-8 py-6 flex items-center justify-between font-bold text-darker hover:text-secondary group transition-colors">
+                            <span class="text-lg">Como os clientes entram em contato comigo?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 bg-light rounded-full p-1" :class="selected === 8 ? 'rotate-180 bg-secondary text-white' : ''">expand_more</span>
+                        </button>
+                        <div x-show="selected === 8" x-collapse>
+                            <div class="px-8 pb-8 text-darker/70 text-base leading-relaxed">
+                                A nossa abordagem foca em comunica��o direta: no site as rotas convertem primariamente para chamadas iniciadas em WhatsApp, onde se tem agilidade total no fechamento de novos neg�cios.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="mobile-bg-cta py-24 relative overflow-hidden bg-[position:75%_center] md:bg-center" style="background-image: url('/img/cta-chamada-acao.jpg'); background-size: cover;">
+            <!-- Overlay escuro 25% para manter a visibilidade da imagem em 75% -->
+            <div class="absolute inset-0 bg-darker" style="opacity: 0.25;"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-destaque/10 rounded-full blur-[100px]"></div>
+            
+            <div class="relative z-10 max-w-[900px] mx-auto px-6 lg:px-8 text-center">
+                <h3 class="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight mb-6">
+                    Sua empresa no Google. <span class="text-white">Seus clientes no WhatsApp.</span>
+                </h3>
+                <p class="text-xl text-white font-bold mb-10 leading-relaxed" style="font-family: sans-serif;">
+                    Site profissional, SEO local e estrat�gia digital para empresas em Santa Maria. Entrega em 30 dias. Atendimento direto no WhatsApp sem burocracia.
+                </p>
+                <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex items-center gap-3 bg-secondary text-white px-10 py-5 rounded-[16px] font-bold text-base md:text-lg hover:bg-primary transition-all shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:scale-105 active:scale-95">
+                    Falar com o Adilson Agora ?
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-borderBlue/50 pt-16 pb-8">
+        <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-6">
+                    <a href="/" class="flex items-center group inline-flex">
+                        <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                    </a>
+                    <p class="text-darker/60 text-sm leading-relaxed max-w-sm">
+                        Adilson Sousa. Cria��o de sites, SEO Local e presen�a digital com vi�s tecnol�gico e orienta��o premium � convers�o.
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="font-bold text-darker mb-4">Navega��o</div>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/" class="text-darker/60 hover:text-secondary transition-colors">In�cio</a></li>
+                        <li><a href="/sobre-nos.html" class="text-darker/60 hover:text-secondary transition-colors">Sobre N�s</a></li>
+                        <li><a href="/contato.html" class="text-darker/60 hover:text-secondary transition-colors">Contato</a></li>
+                        <li><a href="/faq.html" class="text-darker/60 hover:text-secondary transition-colors">D�vidas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="font-bold text-darker mb-4">Informa��es</div>
+                    <ul class="space-y-4 text-sm text-darker/60">
+                        <li class="flex items-start gap-3">
+                                                        <svg class="w-5 h-5 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Santa Maria - RS e regi�o (Atendimento Online)
+                        </li>
+                        <li class="flex items-center gap-3">
+                                                        <svg class="w-5 h-5 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                            +55 55 99669-5492
+                        </li>
+                        <li class="flex items-center gap-3">
+                                                        <svg class="w-5 h-5 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Seg a Sex - Atendimento Online
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="font-bold text-darker mb-4">Acompanhe</div>
+                    <div class="flex gap-4">
+                        <a href="https://instagram.com/adilsontsousa" target="_blank" class="w-10 h-10 rounded-full bg-lightAlt flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-borderBlue/50 flex flex-col md:flex-row justify-between items-center gap-4 text-darker/50 text-xs">
+                <span>� 2025 Adilson Sousa. Todos os direitos reservados.</span>
+                <span>Desenvolvido por Adilson Sousa</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5555996695492" target="_blank" class="fixed right-6 bottom-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform z-50 flex items-center justify-center" aria-label="WhatsApp">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12.016 2.015c-5.512 0-9.984 4.471-9.984 9.984 0 2.008.57 3.864 1.554 5.422L2 22.016l4.733-1.423a9.923 9.923 0 005.283 1.517c5.512 0 9.984-4.472 9.984-9.984 0-5.513-4.472-9.984-9.984-9.984zM16.924 15.65c-.218.614-1.258 1.171-1.748 1.252-.45.074-1.042.143-3.238-.768-2.646-1.096-4.321-3.792-4.453-3.966-.13-.173-1.066-1.423-1.066-2.716 0-1.293.682-1.928.924-2.186.242-.258.528-.323.702-.323.174 0 .348.01.503.017.163.007.382-.061.597.458.216.52.738 1.802.803 1.932.065.13.108.281.021.455-.087.173-.13.281-.26.433-.13.152-.274.331-.39.462-.13.14-.268.293-.115.558.152.264.678 1.121 1.452 1.81.996.887 1.838 1.161 2.11 1.292.274.13.434.108.598-.065.163-.173.715-.824.91-1.106.195-.281.39-.236.63-.146.238.093 1.506.711 1.766.842.26.13.433.195.498.303.065.108.065.63-.153 1.244z"/></svg>
+    </a>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

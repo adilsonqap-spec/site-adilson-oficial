@@ -313,10 +313,46 @@
     <a href="https://wa.me/5555996695492" target="_blank" class="fixed right-6 bottom-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform z-50 flex items-center justify-center" aria-label="WhatsApp">
         <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12.016 2.015c-5.512 0-9.984 4.471-9.984 9.984 0 2.008.57 3.864 1.554 5.422L2 22.016l4.733-1.423a9.923 9.923 0 005.283 1.517c5.512 0 9.984-4.472 9.984-9.984 0-5.513-4.472-9.984-9.984-9.984zM16.924 15.65c-.218.614-1.258 1.171-1.748 1.252-.45.074-1.042.143-3.238-.768-2.646-1.096-4.321-3.792-4.453-3.966-.13-.173-1.066-1.423-1.066-2.716 0-1.293.682-1.928.924-2.186.242-.258.528-.323.702-.323.174 0 .348.01.503.017.163.007.382-.061.597.458.216.52.738 1.802.803 1.932.065.13.108.281.021.455-.087.173-.13.281-.26.433-.13.152-.274.331-.39.462-.13.14-.268.293-.115.558.152.264.678 1.121 1.452 1.81.996.887 1.838 1.161 2.11 1.292.274.13.434.108.598-.065.163-.173.715-.824.91-1.106.195-.281.39-.236.63-.146.238.093 1.506.711 1.766.842.26.13.433.195.498.303.065.108.065.63-.153 1.244z"/></svg>
     </a>
+    
+    <!-- Banner de Cookies -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9999] px-4 py-4 md:px-8 md:py-5" style="display:none;">
+        <div class="max-w-[1100px] mx-auto bg-darker/95 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-5 flex flex-col md:flex-row items-center gap-5 shadow-2xl">
+            <div class="flex-1 text-sm text-white/80 leading-relaxed">
+                <span class="text-white font-bold text-base">🍪 Este site usa cookies</span><br>
+                Utilizamos cookies para melhorar sua experiência de navegação, analisar o tráfego e personalizar conteúdo. Ao clicar em <strong class="text-white">"Aceitar"</strong>, você concorda com o uso de todos os cookies. Ao clicar em <strong class="text-white">"Rejeitar"</strong>, apenas os cookies estritamente necessários serão utilizados.
+                <a href="/politica-de-cookies.html" class="text-primary hover:underline ml-1 font-semibold">Saiba mais →</a>
+            </div>
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <button id="cookie-reject" onclick="setCookieConsent('rejected')" class="px-5 py-2.5 rounded-full border border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition-all">
+                    Rejeitar
+                </button>
+                <button id="cookie-accept" onclick="setCookieConsent('accepted')" class="px-6 py-2.5 rounded-full bg-secondary text-white text-sm font-bold hover:bg-primary transition-all shadow-lg">
+                    Aceitar Cookies
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function setCookieConsent(value) {
+        localStorage.setItem('cookieConsent', value);
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function checkCookieConsent() {
+        const consent = localStorage.getItem('cookieConsent');
+        if (!consent) {
+            setTimeout(function() {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }, 1500);
+        }
+    }
+    checkCookieConsent();
+    </script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
+
 
 
 

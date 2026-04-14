@@ -38,7 +38,7 @@
     <link rel="preconnect" href="https://fonts.cdnfonts.com">
 
     
-    <link rel="stylesheet" href="./style.css?v=2">
+    <link rel="stylesheet" href="./style.css">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     [
@@ -226,91 +226,6 @@
         }
     }
     </style>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#12A9FF',
-            secondary: '#2563EB',
-            destaque: '#38BDF8',
-            dark: '#07111F',
-            darker: '#111827',
-            light: '#F9FAFB',
-            lightAlt: '#EEF6FF',
-            borderBlue: '#D6E6FF'
-          },
-          fontFamily: {
-            sans: ['Manrope', 'sans-serif'],
-          }
-        }
-      }
-    }
-</script>
-    <!-- Fail-safe Styles for Navigation -->
-    <style>
-    .glass-pill {
-        background: rgba(255, 255, 255, 0.72) !important;
-        backdrop-filter: blur(12px) !important;
-        -webkit-backdrop-filter: blur(12px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.4) !important;
-        border-radius: 9999px !important;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06) !important;
-    }
-    </style>
-</head>
-<body class="bg-light text-darker antialiased selection:bg-secondary selection:text-white">
-
-    <!-- Navbar Flutuante -->
-    <header x-data="{ mobileMenuOpen: false }" @resize.window="if(window.innerWidth >= 768) mobileMenuOpen = false" class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-10 px-4 lg:px-8">
-
-        <!-- Container pill desktop -->
-        <div class="w-full max-w-[1100px]">
-            <nav class="glass-pill hidden md:flex items-center pl-4 pr-6 py-0 h-16 justify-between">
-                <a href="/" class="flex items-center group">
-                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]">
-                </a>
-
-                <div class="flex items-center gap-6 md:gap-8 ">
-                    <div class="flex items-center gap-7 text-sm font-semibold text-darker/60 relative">
-                        <a class="hover:text-secondary transition-colors duration-300" href="/">Início</a>
-                        <a class="hover:text-secondary transition-colors duration-300" href="/sobre-nos.html">Sobre Nós</a>
-                        
-                        <div x-data="{ open: false }" class="relative" @click.away="open = false">
-                            <button @click="open = !open" class="hover:text-secondary transition-colors duration-300 flex items-center gap-1">
-                                Serviços <svg class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                            </button>
-                            <div x-show="open" x-transition.opacity class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[220px] bg-white rounded-2xl shadow-xl border border-white/60 py-2" style="display: none;">
-                                <a href="/criacao-de-sites.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Criação de Sites</a>
-                                <a href="/landing-page.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Landing Pages</a>
-                                <a href="/google-meu-negocio.html" class="block px-5 py-2.5 hover:bg-lightAlt hover:text-secondary transition-colors">Google Meu Negócio</a>
-                            </div>
-                        </div>
-
-                        <a class="hover:text-secondary transition-colors duration-300" href="/contato.html">Contato</a>
-                        <a class="hover:text-secondary transition-colors duration-300" href="/faq.html">FAQ</a>
-                    </div>
-
-                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary transition-all shadow-sm">
-                        Falar no WhatsApp
-                    </a>
-                </div>
-            </nav>
-
-            <div class="glass-pill md:hidden relative flex justify-between items-center pl-4 pr-4 py-0 mx-auto w-full gap-4 h-14">
-                <a href="/" class="flex items-center group">
-                    <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]">
-                </a>
-                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center justify-center p-1.5 rounded-full text-darker hover:bg-lightAlt focus:outline-none">
-                    <span class="sr-only">Abrir menu</span>
-                    <svg class="w-6 h-6" x-show="!mobileMenuOpen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-                    <svg class="w-6 h-6" x-show="mobileMenuOpen" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                </button>
-            </div>
-
-            <!-- Mobile dropdown -->
-            <div x-show="mobileMenuOpen" x-collapse style="display:none;" class="md:hidden mt-2 bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/60 overflow-hidden">
                 <div class="px-4 py-4 space-y-1">
                     <a href="/" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Início</a>
                     <a href="/sobre-nos.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Sobre Nós</a>
@@ -362,7 +277,7 @@
             <!-- Overlay escuro (25%) para deixar fotos com 75% de visibilidade -->
             <div class="absolute inset-0 bg-darker" style="opacity: 0.25;"></div>
             
-            <div class="relative z-20 max-w-[1200px] mx-auto px-6 lg:px-8 w-full flex flex-col items-start text-left pt-72 lg:pt-72">
+            <div class="relative z-20 max-w-[1200px] mx-auto px-6 lg:px-8 w-full flex flex-col items-start text-left pt-44 lg:pt-52">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1] mb-6 max-w-4xl">
                     Criação de Sites em <span class="text-white block mt-2">Santa Maria, RS que Aparecem no Google</span>
                 </h1>
@@ -572,7 +487,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="space-y-6">
                     <a href="/" class="flex items-center group inline-flex">
-                        <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]">
+                        <img src="/img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-24 w-auto transition-transform duration-300 group-hover:scale-105 -my-4 relative z-10">
                     </a>
                     <p class="text-darker/60 text-sm leading-relaxed max-w-sm">
                         Adilson Sousa. Criação de sites, SEO Local e presença digital com viés tecnológico e orientação premium à conversão.
@@ -628,46 +543,9 @@
         <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M11.419 1Z" /><path d="M12.016 2.015c-5.512 0-9.984 4.471-9.984 9.984 0 2.008.57 3.864 1.554 5.422L2 22.016l4.733-1.423a9.923 9.923 0 005.283 1.517c5.512 0 9.984-4.472 9.984-9.984 0-5.513-4.472-9.984-9.984-9.984zM16.924 15.65c-.218.614-1.258 1.171-1.748 1.252-.45.074-1.042.143-3.238-.768-2.646-1.096-4.321-3.792-4.453-3.966-.13-.173-1.066-1.423-1.066-2.716 0-1.293.682-1.928.924-2.186.242-.258.528-.323.702-.323.174 0 .348.01.503.017.163.007.382-.061.597.458.216.52.738 1.802.803 1.932.065.13.108.281.021.455-.087.173-.13.281-.26.433-.13.152-.274.331-.39.462-.13.14-.268.293-.115.558.152.264.678 1.121 1.452 1.81.996.887 1.838 1.161 2.11 1.292.274.13.434.108.598-.065.163-.173.715-.824.91-1.106.195-.281.39-.236.63-.146.238.093 1.506.711 1.766.842.26.13.433.195.498.303.065.108.065.63-.153 1.244z"/></svg>
     </a>
 
-    
-    <!-- Banner de Cookies -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9999] px-4 py-4 md:px-8 md:py-5" style="display:none;">
-        <div class="max-w-[1100px] mx-auto bg-darker/95 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-5 flex flex-col md:flex-row items-center gap-5 shadow-2xl">
-            <div class="flex-1 text-sm text-white/80 leading-relaxed">
-                <span class="text-white font-bold text-base">🍪 Este site usa cookies</span><br>
-                Utilizamos cookies para melhorar sua experiência de navegação, analisar o tráfego e personalizar conteúdo. Ao clicar em <strong class="text-white">"Aceitar"</strong>, você concorda com o uso de todos os cookies. Ao clicar em <strong class="text-white">"Rejeitar"</strong>, apenas os cookies estritamente necessários serão utilizados.
-                <a href="/politica-de-cookies.html" class="text-primary hover:underline ml-1 font-semibold">Saiba mais →</a>
-            </div>
-            <div class="flex items-center gap-3 flex-shrink-0">
-                <button id="cookie-reject" onclick="setCookieConsent('rejected')" class="px-5 py-2.5 rounded-full border border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition-all">
-                    Rejeitar
-                </button>
-                <button id="cookie-accept" onclick="setCookieConsent('accepted')" class="px-6 py-2.5 rounded-full bg-secondary text-white text-sm font-bold hover:bg-primary transition-all shadow-lg">
-                    Aceitar Cookies
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-    function setCookieConsent(value) {
-        localStorage.setItem('cookieConsent', value);
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-    function checkCookieConsent() {
-        const consent = localStorage.getItem('cookieConsent');
-        if (!consent) {
-            setTimeout(function() {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }, 1500);
-        }
-    }
-    checkCookieConsent();
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
-
 
 
 
