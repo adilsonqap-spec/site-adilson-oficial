@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
@@ -33,7 +33,8 @@
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">`n    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.cdnfonts.com">
     
@@ -234,14 +235,6 @@
     ]
     </script>
 
-    <!-- Mobile image optimization: swap to smaller WebP -->
-    <style>
-    @media (max-width: 768px) {
-        .mobile-bg-cta-chamada-acao {
-            background-image: url('/img/cta-chamada-acao-mobile.webp') !important;
-        }
-    }
-    </style>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = {
@@ -558,8 +551,7 @@
             </div>
         </section>
 
-        <section id="contato" class="mobile-bg-cta py-[96px] relative overflow-hidden bg-[position:75%_center] md:bg-center"
-            style="background-image: url('/img/cta-chamada-acao.jpg'); background-size: cover;">
+        <section id="contato" class="mobile-bg-cta py-[96px] relative overflow-hidden bg-[position:75%_center] md:bg-center">
             <!-- Overlay escuro 25% para manter a visibilidade da imagem em 75% -->
             <div class="absolute inset-0 bg-darker" style="opacity: 0.25;"></div>
             <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>

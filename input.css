@@ -22,3 +22,32 @@ body { font-family: 'Manrope', sans-serif; }
     0%   { transform: scale(1);    }
     100% { transform: scale(1.12); }
 }
+
+/* ===== OPTIMIZATION: Responsive Backgrounds ===== */
+.mobile-bg-cta { background-image: url('/img/cta-chamada-acao.jpg'); background-size: cover; }
+.mobile-bg-criacao-site-pagina { background-image: url('/img/criacao-site-pagina.jpg'); }
+.mobile-bg-google-meu-negocio-nova { background-image: url('/img/google-meu-negocio-nova.jpg'); }
+.mobile-bg-landing-page-nova { background-image: url('/img/landing-page-nova.jpg'); }
+.mobile-bg-foto-faq { background-image: url('/img/foto-faq.jpg'); }
+.mobile-bg-foto-contato { background-image: url('/img/foto-contato.jpg'); }
+
+@media (max-width: 768px) {
+    .mobile-bg-cta {
+        background-image: url('/img/cta-chamada-acao-mobile.webp') !important;
+    }
+    .mobile-bg-criacao-site-pagina {
+        background-image: url('/img/criacao-site-pagina-mobile.webp') !important;
+    }
+    .mobile-bg-google-meu-negocio-nova {
+        background-image: url('/img/google-meu-negocio-nova-mobile.webp') !important;
+    }
+    .mobile-bg-landing-page-nova {
+        background-image: url('/img/landing-page-nova-mobile.webp') !important;
+    }
+    .mobile-bg-foto-faq {
+        background-image: url('/img/foto-faq-mobile.webp') !important;
+    }
+    .mobile-bg-foto-contato {
+        background-image: url('/img/foto-contato-mobile.webp') !important;
+    }
+}

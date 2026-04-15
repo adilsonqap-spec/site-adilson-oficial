@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
@@ -13,7 +13,8 @@
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">`n    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.cdnfonts.com">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -25,22 +26,10 @@
     <link rel="preload" as="image" href="/img/landing-page-nova.jpg" fetchpriority="high">
     <link rel="stylesheet" href="./style.css">
 
-    <!-- Mobile image optimization: swap to smaller WebP -->
-    <style>
-    @media (max-width: 768px) {
-        .mobile-bg-landing-page-nova {
-            background-image: url('/img/landing-page-nova-mobile.webp') !important;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .mobile-bg-cta {
-            background-image: url('/img/cta-chamada-acao-mobile.webp') !important;
-        }
-    }
-</style>
+    <!-- Mobile optimizations moved to style.css -->
+
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -152,7 +141,7 @@
         <section class="pt-72 pb-20 bg-darker text-white relative overflow-hidden">
             <!-- Background Animado -->
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <div class="hero-slide active absolute inset-0 mobile-bg-landing-page-nova" style="background-image: url('/img/landing-page-nova.jpg');"></div>
+                <div class="hero-slide active absolute inset-0 mobile-bg-landing-page-nova"></div>
             </div>
             <!-- Overlay escuro (25%) para 75% de visibilidade -->
             <div class="absolute inset-0 bg-darker z-10" style="opacity: 0.25;"></div>
@@ -235,7 +224,7 @@
         </section>
 
         <!-- CTA Final -->
-        <section class="mobile-bg-cta py-24 relative overflow-hidden bg-[position:75%_center] md:bg-center" style="background-image: url('/img/cta-chamada-acao.jpg'); background-size: cover;">
+        <section class="mobile-bg-cta py-24 relative overflow-hidden bg-[position:75%_center] md:bg-center">
             <!-- Overlay escuro 25% para manter a visibilidade da imagem em 75% -->
             <div class="absolute inset-0 bg-darker" style="opacity: 0.25;"></div>
             <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>
