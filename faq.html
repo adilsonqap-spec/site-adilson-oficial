@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
@@ -13,7 +13,6 @@
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.cdnfonts.com">
@@ -40,28 +39,8 @@
         }
     }
 </style>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#12A9FF',
-            secondary: '#2563EB',
-            destaque: '#38BDF8',
-            dark: '#07111F',
-            darker: '#111827',
-            light: '#F9FAFB',
-            lightAlt: '#EEF6FF',
-            borderBlue: '#D6E6FF'
-          },
-          fontFamily: {
-            sans: ['Manrope', 'sans-serif'],
-          }
-        }
-      }
-    }
-</script>
+
+
     <!-- Fail-safe Styles for Navigation -->
     <style>
     .glass-pill {
@@ -80,13 +59,13 @@
 
         <!-- Container pill desktop -->
         <div class="w-full max-w-[1100px]">
-            <nav class="glass-pill hidden md:flex items-center pl-4 pr-6 py-0 h-16 justify-between">
+            <nav class="glass-pill hidden md:flex items-center pl-4 pr-6 py-0 h-20 justify-between">
                 <a href="/" class="flex items-center group">
-                    <img src="./img/logo-adilson-nova.webp" width="200" height="64"> alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]" width="200" height="64">
+                    <img src="./img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-12 w-auto scale-[1.6] translate-y-1 origin-left transition-transform duration-300 group-hover:scale-[1.7]" width="200" height="64">
                 </a>
 
-                <div class="flex items-center gap-6 md:gap-8 " width="200" height="64">
-                    <div class="flex items-center gap-7 text-sm font-semibold text-darker/60 relative">
+                <div class="flex items-center gap-5 md:gap-6">
+                    <div class="flex items-center gap-5 lg:gap-7 text-sm font-semibold text-darker/60 relative whitespace-nowrap">
                         <a class="hover:text-secondary transition-colors duration-300" href="/">Início</a>
                         <a class="hover:text-secondary transition-colors duration-300" href="/sobre-nos.html">Sobre Nós</a>
                         
@@ -103,6 +82,7 @@
 
                         <a class="hover:text-secondary transition-colors duration-300" href="/contato.html">Contato</a>
                         <a class="text-secondary font-bold" href="/faq.html">FAQ</a>
+                        <a class="hover:text-secondary transition-colors duration-300" href="/politica-de-cookies.html">Política de cookies (BR)</a>
                     </div>
 
                     <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary transition-all shadow-sm">
@@ -114,7 +94,7 @@
             <!-- Mobile topbar -->
             <div class="glass-pill md:hidden relative flex justify-between items-center pl-4 pr-4 py-0 mx-auto w-full gap-4 h-14">
                 <a href="/" class="flex items-center group">
-                    <img src="./img/logo-adilson-nova.webp" width="200" height="64"> alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]" width="200" height="64">
+                    <img src="./img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]" width="200" height="64">
                 </a>
                 <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center justify-center p-1.5 rounded-full text-darker hover:bg-lightAlt focus:outline-none" >
                     <span class="sr-only">Abrir menu</span>
@@ -142,6 +122,7 @@
 
                     <a href="/contato.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Contato</a>
                     <a href="/faq.html" class="block px-4 py-3 rounded-xl text-sm text-secondary font-bold bg-lightAlt">FAQ</a>
+                    <a href="/politica-de-cookies.html" class="block px-4 py-3 rounded-xl text-sm text-darker hover:bg-lightAlt font-medium">Política de cookies (BR)</a>
                 </div>
             </div>
         </div>
@@ -297,9 +278,9 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="space-y-6">
                     <a href="/" class="flex items-center group inline-flex">
-                        <img src="./img/logo-adilson-nova.webp" width="200" height="64"> alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]" width="200" height="64">
-                    </a>
-                    <p class="text-darker/60 text-sm leading-relaxed max-w-sm" width="200" height="64">
+                    <img src="./img/logo-adilson-nova.webp" alt="Adilson Sousa" class="h-12 w-auto scale-[1.7] translate-y-2 origin-left transition-transform duration-300 group-hover:scale-[1.85]" width="200" height="64">
+                </a>
+                    <p class="text-darker/60 text-sm leading-relaxed max-w-sm">
                         Adilson Sousa — Criação de Sites, SEO Local e estratégia digital orientada a resultados.
                     </p>
                 </div>
@@ -378,12 +359,20 @@
         localStorage.setItem('cookieConsent', value);
         document.getElementById('cookie-banner').style.display = 'none';
     }
+        function initCookieBanner() {
+        if (!localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    }
     function checkCookieConsent() {
-        const consent = localStorage.getItem('cookieConsent');
-        if (!consent) {
-            setTimeout(function() {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }, 1500);
+        if (!localStorage.getItem('cookieConsent')) {
+            const events = ['scroll', 'mousemove', 'touchstart', 'keydown'];
+            const showBanner = () => {
+                initCookieBanner();
+                events.forEach(e => window.removeEventListener(e, showBanner));
+            };
+            events.forEach(e => window.addEventListener(e, showBanner, { once: true }));
+            setTimeout(showBanner, 3500);
         }
     }
     checkCookieConsent();
@@ -392,24 +381,3 @@
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
